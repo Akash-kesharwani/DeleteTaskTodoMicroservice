@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: delete-task
+  name: del-service
 spec:
   type: ClusterIP
   selector:
-    app: delete-task
+    app: del-todo
   ports:
   - port: 80
     targetPort: 8000
+    

@@ -1,18 +1,18 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: delete-task-ingress
-  annotations:
-    kubernetes.io/ingress.class: addon-http-application-routing
+  name: del-ing
 spec:
+  ingressClassName: nginx
   rules:
-  - host: delete-task.devopsinsiders.online
+  - host: del.cloudpunk.shop
     http:
       paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
+      - backend:
           service:
-            name: delete-task
+            name: del-service
             port: 
               number: 80
+        path: "/"         
+        pathType: Prefix
+  
