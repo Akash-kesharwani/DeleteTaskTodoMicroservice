@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: delcon
-        image: appacrakash01.azurecr.io/delete-task-todo-api
+        image: appacrakash01.azurecr.io/delete-task-todo-api:v1
         ports:
         - containerPort: 8000
         env:
