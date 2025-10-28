@@ -6,11 +6,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: del-todo
+      app: del-label
   template:
     metadata:
       labels: 
-        app: del-todo
+        app: del-label
     spec:
       containers:
       - name: delcon
