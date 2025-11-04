@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: del-ing
 spec:
-  ingressClassName: nginx
+  ingressClassName: azure-application-gateway
   rules:
   - host: del.cloudpunk.shop
     http:
