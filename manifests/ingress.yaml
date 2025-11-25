@@ -1,18 +1,18 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: del-ing
-spec:
-  ingressClassName: azure-application-gateway
-  rules:
-  - host: del.cloudpunk.shop
-    http:
-      paths:
-      - backend:
-          service:
-            name: del-service
-            port: 
-              number: 80
-        path: "/"         
-        pathType: Prefix
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: del-ing
+# spec:
+#   ingressClassName: azure-application-gateway
+#   rules:
+#   - host: del.cloudpunk.shop
+#     http:
+#       paths:
+#       - backend:
+#           service:
+#             name: del-service
+#             port: 
+#               number: 80
+#         path: "/"         
+#         pathType: Prefix
   

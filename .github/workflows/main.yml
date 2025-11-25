@@ -2,7 +2,7 @@ name: "This workflow belongs to todo App"
 
 on:
   push:
-    branch:
+    branches:
     - main
     
 permissions:
@@ -16,8 +16,8 @@ jobs:
     env:
       IMAGE_NAME: delete-task-todo-api
       IMAGE_TAG: v1
-      ACR_NAME: appacrakash01
-      ACR_LOGIN_SERVER: appacrakash01.azurecr.io
+      ACR_NAME: acrak123
+      ACR_LOGIN_SERVER: acrak123.azurecr.io
 
     steps:
     - name: checkout code
