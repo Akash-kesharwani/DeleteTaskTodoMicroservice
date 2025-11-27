@@ -46,3 +46,4 @@ jobs:
       run: |
         docker push $ACR_LOGIN_SERVER/$IMAGE_NAME:$IMAGE_TAG
         
+        
